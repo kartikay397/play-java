@@ -1,0 +1,17 @@
+body{
+display: block;
+	margin: 0;
+    padding: 0px;
+    background: url(../images/garden_background.jpg) 0% 0% repeat-x;
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+    font-size:12px;
+	text-align: left;
+}
+#header{
+display: inline;
+padding: 0px 0px 25px 0px;
+width: 960px;
+float: left;
+clear: left;
+margin-top: 9px;
+}
