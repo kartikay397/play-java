@@ -1,6 +1,6 @@
 package Beans;
 
-
+import static play.data.validation.Constraints.*;
 
 /**
  * Created by kartikay.kulshrestha on 12/15/14.
@@ -9,7 +9,9 @@ package Beans;
 
 public class ChangeAddressUserVO {
     private String SecondContactNumber;
+    @Required
     private String Province;
+    @Required
     private String StreetName;
     private String Ext;
 
@@ -21,6 +23,9 @@ public class ChangeAddressUserVO {
         Province = province;
     }
 
+    @Required
+    @MinLength(10)
+    @MaxLength(10)
     private String ContactNumber;
 
     public String getApt() {
@@ -108,8 +113,11 @@ public class ChangeAddressUserVO {
     private String Month;
     private String Year;
     private String concateDate;
+    @Required
     private String City;
+    @Required
     private String StreetNumber;
+    @Required
     private String PostalCode;
     private String Apt;
 
@@ -128,4 +136,6 @@ public class ChangeAddressUserVO {
     public void setSecondContactNumber(String secondContactNumber) {
         SecondContactNumber = secondContactNumber;
     }
+
+
 }

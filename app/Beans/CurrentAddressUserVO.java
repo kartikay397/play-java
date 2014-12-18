@@ -16,7 +16,7 @@ public class CurrentAddressUserVO {
     private String Province = "ONTARIO";
     private String StreetName = "LISA St BRAMPTON";
 
-    private String City = "TORANTO";
+    private String City = "TORONTO";
     private String StreetNumber = "10";
     private String PostalCode = "L6T4N4";
     private String Apt = "1102";

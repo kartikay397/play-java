@@ -1,6 +1,12 @@
+@import play.data.validation._
 @(message: String)
 
 @main("Change Address") {<div class="container">
+    {ifErrors}
+    {errors}
+    <h3>${error}</h3>
+    {/errors}
+    {/ifErrors}
     <div class="row">
         <div id="header" class="col-sm-12 col-lg-12 col-md-12 col-xs-12"><img src="/assets/images/logofido.png"
                                                                               width="140" height="45"/>
@@ -168,6 +174,7 @@
              style="width:350px;margin-top:10px;padding-bottom:10px;margin-right:10px;">
 
             <label for="">Street number*:</label>
+
 
             <div class="input-group">
                 <input class="form-control" type="text" id="" ng-model="" name="StreetNumber">
